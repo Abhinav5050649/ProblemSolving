@@ -1,0 +1,1 @@
+{"name":"Local: stva","url":"d:\\Programs\\Codeforces\\Div4_30Aug2022\\stva.cpp","tests":[{"id":1667585702924,"input":"8 15\n3 2 5 8 1 3 2 3","output":"2 4 6 7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Programs\\Codeforces\\Div4_30Aug2022\\stva.cpp","group":"local","local":true}

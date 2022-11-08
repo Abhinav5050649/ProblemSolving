@@ -1,0 +1,1 @@
+{"name":"Local: chs","url":"d:\\Programs\\Codeforces\\Div4_30Aug2022\\chs.cpp","tests":[{"id":1666276149597,"input":"4\naeiou\nabxy\naebcdefghij\nabcdeeafg","output":"Happy\nSad\nSad\nHappy"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Programs\\Codeforces\\Div4_30Aug2022\\chs.cpp","group":"local","local":true}
