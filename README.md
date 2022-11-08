@@ -1,3 +1,3 @@
 # Problem Solving
 
-Repo consists of the problems which I have solved
+Repo consists some of the problems which I have solved
