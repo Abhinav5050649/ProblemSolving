@@ -144,12 +144,13 @@ vll dp(maxN, 0);
 void solve()
 {
     ll n; cin >> n;
-    ll cnt = 1;
-    while (n > 0)
+    ll cnt = 0, sum = 0;
+
+    for (ll i = 1; i < maxN; ++i)
     {
-        n -= dp[cnt];
-        
-        if (n < dp[cnt])    break;
+        if (sum + dp[i] > n)    break;
+
+        sum += dp[i];
         ++cnt;
     }
 
@@ -168,7 +169,7 @@ int main()
     //vll primes = prime();
 
     dp[0] = 0, dp[1] = 1;
-    for (ll i = 2; i < maxN; ++i)  dp[i] = dp[i - 1] + i;
+    for (ll i = 2; i < maxN; ++i)   dp[i] = (dp[i - 1] + i) %mod;
 
     solve();
 
