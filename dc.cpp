@@ -141,11 +141,16 @@ ll Binomial(ll N, ll R, ll p)
 void solve()
 {
     vll dp(maxN, 0);
-    dp[0] = 0, dp[1] = 1;
-
-    for (ll i = 2; i <= maxN; ++i)
+    dp[0] = 1;
+    for (ll i = 1; i < maxN; ++i)
     {
-        dp[i] = ((dp[i - 1] + (i - 1)) % mod);
+        ll s = 0, j = 0;
+        while (i - j >= 0 && j <= 6)
+        {
+            s += dp[i - j]; ++j;
+        }
+
+        dp[i] = s % mod;
     }
     ll n; cin >> n;
     cout << dp[n] << '\n';
